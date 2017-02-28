@@ -1,9 +1,7 @@
 package com.examples.one.petstore;
 
-class Puppy{
-    int id;
-    String name;
-    String breed;
+class Puppy extends Pet{
+
     boolean loudBark;
     int exerciseRequiredPerDay;
     boolean friendlyWithChildren;
@@ -14,17 +12,6 @@ class Puppy{
         this.breed = breed;
     }
 
-    public int getId() {
-        return this.id;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public String getBreed() {
-        return this.breed;
-    }
 
     public boolean getLoudBark() {
         return this.loudBark;
@@ -36,18 +23,6 @@ class Puppy{
 
     public int getFriendlyWithChildren() {
         return this.friendlyWithChildren;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setBreed(String breed) {
-        this.breed = breed;
     }
 
     public void setLoudBark(boolean loudBark) {
